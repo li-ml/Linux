@@ -11,5 +11,6 @@ zipfile=$basedir/app.db.$(date +%Y-%m-%d).zip
 [ ! -d "$basedir" ] && mkdir $basedir
 
 
+# 不带源路径，直接全部压缩： zip -j $zipfile $srcdir
 cd $srcdir
   zip -r $zipfile ./*
